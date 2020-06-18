@@ -28,3 +28,7 @@ Route::apiResources([
 Route::apiResources([
     'user' => 'API\UserController',
 ]);
+
+Route::apiResources([
+    'tambahberita' => 'API\TambahBeritaController',
+]);

@@ -4,7 +4,7 @@
 
 
 <head>
-  <title>Wo i</title>
+  <title>Admin | Mading Online FT</title>
   @include('Template.head')
 </head>
 

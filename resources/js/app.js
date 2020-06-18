@@ -45,6 +45,7 @@ window.Fire = Fire;
 
 let routes = [
     {path:'/tambah-blog', component: require('./components/Blog/TambahBlog.vue').default},
+    {path:'/tambah-berita', component: require('./components/Blog/TambahBerita.vue').default},
     {path:'/data-blog', component: require('./components/Blog/DataBlog.vue').default},
     {path:'/user', component: require('./components/Blog/User.vue').default},
     {path:'/category', component: require('./components/Blog/Category.vue').default},
