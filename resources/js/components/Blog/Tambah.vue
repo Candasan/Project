@@ -23,7 +23,7 @@
                                 <th style="width:15%"><center>Aksi</center></th>
                             </tr>
 
-                            <tr v-for="items in tambahberitas" :key="items.id">
+                            <tr v-for="items in tambahs" :key="items.id">
                                 <td> 
                                     {{items.judul}}
                                 </td>
@@ -104,7 +104,7 @@
         data() {
             return {
                 editmode: false,
-                tambahberitas: {},
+                tambahs: {},
                 form: new Form({            //menyimpan data yang diinputkan
                     id: "",
                     judul: "",
@@ -126,11 +126,11 @@
                 this.form.fill(items);
             },
             loadData() {
-                axios.get("api/tambahberita").then(({data}) => (this.tambahberitas = data));
+                axios.get("api/tambah").then(({data}) => (this.tambahs = data));
             },
             createData() {
             this.form
-                .post("api/tambahberita")
+                .post("api/tambah")
                 .then(() => {
                 this.$Progress.start();
                 Fire.$emit("refreshData");      //refresh database kedalam tabel
@@ -145,7 +145,7 @@
             },
             updateData() {
                 this.form
-                .put("api/tambahberita/" + this.form.id)
+                .put("api/tambah/" + this.form.id)
                 .then(() => {
                     this.$Progress.start();
                     $("#tambah").modal("hide");
@@ -172,7 +172,7 @@
                 }).then(result => {
                     if (result.value) {
                         this.form
-                        .delete("api/tambahberita/" + id)
+                        .delete("api/tambah/" + id)
                         .then(() => {
                             Swal.fire("Terhapus", "Data Anda Sudah Terhapus", "success");
                             Fire.$emit("refreshData");

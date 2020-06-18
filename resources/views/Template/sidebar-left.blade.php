@@ -35,7 +35,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <router-link to="tambah-berita" class="nav-link">
+                    <router-link to="tambah" class="nav-link">
                         <i class="fas fa-list-alt nav-icon teal"></i>
                       <p>Tambah Berita</p>
                     </router-link>

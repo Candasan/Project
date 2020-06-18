@@ -32,3 +32,7 @@ Route::apiResources([
 Route::apiResources([
     'tambahberita' => 'API\TambahBeritaController',
 ]);
+
+Route::apiResources([
+    'tambah' => 'API\TambahController',
+]);
