@@ -8,5 +8,5 @@ class Tambah extends Model
 {
     protected $table = "tambah";
     protected $primarykey = "id";
-    protected $fillable = ['id', 'judul', 'isi'];
+    protected $fillable = ['id', 'judul'];
 }

@@ -6,8 +6,8 @@
                     <div class="card-header"><h3>User</h3></div>
 
                     <div class="card-body">
-                        <button type="button" class="btn btn-success float-right" @click="modalBaru">
-                            <i class="fas fa-folder-plus"></i> &nbsp; Tambah User</button>
+                        <!-- <button type="button" class="btn btn-success float-right" @click="modalBaru">
+                            <i class="fas fa-folder-plus"></i> &nbsp; Tambah User</button> -->
 
                         <br>
                         <br>

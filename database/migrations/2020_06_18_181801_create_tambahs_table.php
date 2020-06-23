@@ -16,7 +16,7 @@ class CreateTambahsTable extends Migration
         Schema::create('tambah', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('judul');
-            $table->string('isi');
+            //$table->string('isi')->nullable();
             $table->timestamps();
         });
     }

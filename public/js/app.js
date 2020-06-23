@@ -2479,7 +2479,7 @@ __webpack_require__.r(__webpack_exports__);
     loadData: function loadData() {
       var _this = this;
 
-      axios.get("api/tambah/").then(function (_ref) {
+      axios.get("api/tambah").then(function (_ref) {
         var data = _ref.data;
         return _this.tambahs = data;
       });
@@ -2487,7 +2487,7 @@ __webpack_require__.r(__webpack_exports__);
     createData: function createData() {
       var _this2 = this;
 
-      this.form.post("api/tambah/").then(function () {
+      this.form.post("api/tambah").then(function () {
         _this2.$Progress.start();
 
         Fire.$emit("refreshData"); //refresh database kedalam tabel
@@ -44126,19 +44126,6 @@ var render = function() {
           _vm._m(0),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-success float-right",
-                attrs: { type: "button" },
-                on: { click: _vm.modalBaru }
-              },
-              [
-                _c("i", { staticClass: "fas fa-folder-plus" }),
-                _vm._v("   Tambah User")
-              ]
-            ),
-            _vm._v(" "),
             _c("br"),
             _vm._v(" "),
             _c("br"),
