@@ -4,6 +4,8 @@
 
 
 <head>
+  <link rel="shortcut icon" href="assets/images/logo-1.png" type="image/x-icon">
+
   <title>Admin | Mading Online FT</title>
   @include('Template.head')
 </head>
@@ -32,7 +34,7 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{('menu')}}">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{('menu')}}">Dashboard</a></li>
 
             </ol>
           </div><!-- /.col -->

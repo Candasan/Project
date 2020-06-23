@@ -126,18 +126,18 @@
                 this.form.fill(items);
             },
             loadData() {
-                axios.get("api/tambah").then(({data}) => (this.tambahs = data));
+                axios.get("api/tambah/").then(({data}) => (this.tambahs = data));
             },
             createData() {
             this.form
-                .post("api/tambah")
+                .post("api/tambah/")
                 .then(() => {
                 this.$Progress.start();
                 Fire.$emit("refreshData");      //refresh database kedalam tabel
                 $("#tambah").modal("hide");
                 Toast.fire({                    //notifikasi 
                     type: "success",
-                    title: "Data Berhasi Tersimpan"
+                    title: "Data Berhasil Tersimpan"
                 });
                 this.$Progress.finish();
                 })

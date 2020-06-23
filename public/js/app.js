@@ -2479,7 +2479,7 @@ __webpack_require__.r(__webpack_exports__);
     loadData: function loadData() {
       var _this = this;
 
-      axios.get("api/tambah").then(function (_ref) {
+      axios.get("api/tambah/").then(function (_ref) {
         var data = _ref.data;
         return _this.tambahs = data;
       });
@@ -2487,7 +2487,7 @@ __webpack_require__.r(__webpack_exports__);
     createData: function createData() {
       var _this2 = this;
 
-      this.form.post("api/tambah").then(function () {
+      this.form.post("api/tambah/").then(function () {
         _this2.$Progress.start();
 
         Fire.$emit("refreshData"); //refresh database kedalam tabel
@@ -2496,7 +2496,7 @@ __webpack_require__.r(__webpack_exports__);
         Toast.fire({
           //notifikasi 
           type: "success",
-          title: "Data Berhasi Tersimpan"
+          title: "Data Berhasil Tersimpan"
         });
 
         _this2.$Progress.finish();
